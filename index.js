@@ -76,7 +76,7 @@ client.on("message", msg=> {
                     return msg.reply("You forgot to give me roles to authorize :upside_down:");
                 } else {
                     for (let i = 0; i < args.length-1; i++) {
-                        if(rolesWithAccess.find(e => e === args[i+args.length-1])) {
+                        if(rolesWithAccess.includes(args[i+args.length-1])) {
                             msg.channel.send("That role has already been given access.");
                         } else {
                             rolesWithAccess.push(args[i+args.length-1]);
@@ -101,7 +101,7 @@ client.on("message", msg=> {
                 } 
                 else {
                     for (let i = 0; i < args.length-1; i++) {
-                        if(!rolesWithAccess.find(e=> e === args[i+1])) {
+                        if(!rolesWithAccess.includes(args[i+1])) {
                             msg.channel.send("That role does not have currently have access.");
                         } else {
                             rolesWithAccess.splice(rolesWithAccess.indexOf(args[i+1]), 1);
