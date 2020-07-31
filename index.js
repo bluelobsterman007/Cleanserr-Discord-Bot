@@ -17,7 +17,7 @@ cleanseSpace.push(" ˞˞ ");
 var rolesWithAccess = [];
 
 client.on("message", msg=>{
-    client.user.setActivity("✨Actively Cleansing Your Server!✨-- Use %help for commands", {type: "PLAYING"}).catch(console.error);
+    client.user.setActivity("✨Actively Cleansing Your Server!✨ Use %help for commands ✨", {type: "PLAYING"}).catch(console.error);
 
     let args = msg.content.slice(PREFIX.length).split(" ");
 
