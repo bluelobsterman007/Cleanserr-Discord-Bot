@@ -42,7 +42,7 @@ client.on("message", msg=>{
                 .setColor("#34e1eb")
                 .addFields(
                     { name: "Bot Prefix", value: "%" },
-                    { name: "Warning: Please note that any inputs you type in commands are case sensitive. Please also note that multi-worded roles are currently not supported (eg. 'Server Booster').", value: "Thank you ^.^"},
+                    { name: "Warning: Please note that any commands you type are cAsE sEnSitIvE. Please also note that multi-worded roles are currently not supported (eg. 'Server Booster').", value: "Thank you ^.^"},
                     { name: "Commands :desktop:", value: "Below is a list of all commands for Cleanserr (that's me!):" },
                     { name : "Cleanse Chat", value: "%cleanse" },
                     { name: "Delete Chat Messages", value: "%delete [# of messages]" },
